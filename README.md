@@ -1,6 +1,6 @@
-# formik-callbacks
+# formik-form-callbacks
 
-> formik callbacks
+> formik form callbacks
 
 **\***IT IS UNDER DEVELOPMENT**\***
 **\***SOON TO BE FINISHED**\***
@@ -46,7 +46,7 @@ class Example extends Component {
               {({ value, values, errors }) => {
 
               }}
-            </WithOnValidationChangeHandler>
+            </WithOnFieldChangeHandler>
             <Field>
             <Field>
             <Field>
