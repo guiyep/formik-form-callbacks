@@ -1,6 +1,6 @@
-import WithOnFieldChangeHandler from './WithOnFieldChangeHandler';
+import withOnFieldChangeHandler from './WithOnFieldChangeHandler';
 import withFormikField from '../hoc/withFormikField';
 
-const WithOnChangeHandler = withFormikField(WithOnFieldChangeHandler);
+const WithOnFieldChangeHandler = withFormikField(withOnFieldChangeHandler);
 
-export { WithOnChangeHandler };
+export { WithOnFieldChangeHandler };

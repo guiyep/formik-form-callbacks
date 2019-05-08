@@ -1,4 +1,4 @@
-import React, { memo, memo } from 'react';
+import React, { memo } from 'react';
 import { Field } from 'formik';
 
 const withFormikField = Component => {

@@ -1,6 +1,6 @@
-import WithOnValidationChangeHandlerFormik from './WithOnValidationChangeHandlerFormik';
+import withOnValidationChangeHandler from './WithOnValidationChangeHandler';
 import withFormikField from '../hoc/withFormikField';
 
-const WithOnValidationChangeHandler = withFormikField(WithOnValidationChangeHandlerFormik);
+const WithOnValidationChangeHandler = withFormikField(withOnValidationChangeHandler);
 
 export { WithOnValidationChangeHandler };
