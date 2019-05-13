@@ -8,7 +8,7 @@ I created this 3 components to use them inside a formik form so we can listen to
 
 cheers!
 
-[![NPM](https://img.shields.io/npm/v/formik-changes.svg)](https://www.npmjs.com/package/formik-changes) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/formik-form-callbacks.svg)](https://www.npmjs.com/package/formik-form-callbacks) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
