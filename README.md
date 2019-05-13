@@ -2,9 +2,6 @@
 
 > formik form callbacks
 
-**\***IT IS UNDER DEVELOPMENT**\***
-**\***SOON TO BE FINISHED**\***
-
 The formik owner is not providing with any `on-change` or `on-validation-change` or `on-field-change` callbacks over the formik form, and his side library `formik-effect` is not maintain anymore and it doesn't even work. He relays on having all the logic in the formik fields.
 
 I created this 3 components to use them inside a formik form so we can listen to changes, they are super simple and they use `react-hooks` under the hood.
