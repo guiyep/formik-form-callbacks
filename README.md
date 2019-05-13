@@ -22,38 +22,39 @@ npm install --save formik-callbacks
 ## Usage
 
 ```jsx
+import React, { Component } from 'react';
 
-import React, { Component } from 'react'
-
-import { WithOnChangeHandler, WithOnValidationChangeHandler, WithOnFieldChangeHandler } from 'formik-form-callbacks'
+import { WithOnChangeHandler, WithOnValidationChangeHandler, WithOnFieldChangeHandler } from 'formik-form-callbacks';
 
 class Example extends Component {
-  render () {
+  render() {
     return (
-      <Formik>
+      <Formik
+        initialValues={{ email: '' }}
+        validationSchema={Yup.object().shape({
+          email: Yup.string().required(),
+        })}
+      >
         {() => {
-          <form>
-            <WithOnChangeHandler>
-              {({ values, errors }) => {
-
-              }}
-            </WithOnChangeHandler>
-            <WithOnValidationChangeHandler>
-              {({ values, errors }) => {
-
-              }}
-            <WithOnFieldChangeHandler>
-              {({ value, values, errors }) => {
-
-              }}
-            </WithOnFieldChangeHandler>
-            <Field>
-            <Field>
-            <Field>
-          <form>
+          return (
+            <form>
+              <WithOnChangeHandler>
+                {({ values, errors }) => console.log('any value changed', errors, values)}
+              </WithOnChangeHandler>
+              <WithOnFieldChangeHandler field="email2">
+                {({ values, errors }) => console.log('email2 field changed', errors, values)}
+              </WithOnFieldChangeHandler>
+              <WithOnValidationChangeHandler>
+                {({ values, errors }) => console.log(`validation changed`, errors, values)}
+              </WithOnValidationChangeHandler>
+              <Field type="email" name="email" placeholder="Email" />
+              <Field type="email" name="email2" placeholder="Email" />
+              <Field type="email" name="email3" placeholder="Email" />
+            </form>
+          );
         }}
       </Formik>
-    )
+    );
   }
 }
 ```
