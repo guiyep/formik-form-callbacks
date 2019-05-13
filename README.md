@@ -16,7 +16,7 @@ cheers!
 ## Install
 
 ```bash
-npm install --save formik-callbacks
+npm install --save formik-form-callbacks
 ```
 
 ## Usage
